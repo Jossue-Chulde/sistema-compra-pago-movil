@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Compra</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item lines="none">
+    <ion-input
+      label="Nombre del Producto"
+      labelPlacement="stacked"
+      placeholder="Escribe el nombre del producto"
+      type="text"
+      [(ngModel)]="nombre">
+    </ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-input
+      label="Cantidad"
+      labelPlacement="stacked"
+      placeholder="Digita la cantidad"
+      type="number"
+      inputmode="numeric"
+      min="1"
+      step="1"
+      [(ngModel)]="cantidad">
+    </ion-input>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-input
+      label="Precio Unitario"
+      labelPlacement="stacked"
+      placeholder="0.00"
+      type="number"
+      inputmode="decimal"
+      min="0.01"
+      step="0.01"
+      [(ngModel)]="precioUnitario">
+    </ion-input>
+  </ion-item>
+
+  @if (mensaje) {
+    <p role="alert">{{ mensaje }}</p>
+  }
+
+  <ion-button expand="block" (click)="enviar()">
+    Registrar Compra
+  </ion-button>
+</ion-content>

@@ -1,0 +1,104 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  @if (datos.enviado()) {
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Datos de Compra:</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Producto:</strong> {{ datos.nombre() }}
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Cantidad:</strong> {{ datos.cantidad() }}
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Precio Unitario:</strong>
+            {{ datos.precioUnitario() | currency:'USD' }}
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Subtotal:</strong>
+            {{ datos.subtotal() | currency:'USD' }}
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Descuento:</strong> {{ datos.descuento() }}%
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Monto Descontado:</strong>
+            {{ datos.montoDescuento() | currency:'USD' }}
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Total Final: </strong>
+            <ion-text color="primary">
+              <strong>{{ datos.totalFinal() | currency:'USD' }}</strong>
+            </ion-text>
+          </ion-label>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>
+            <strong>Dinero Recibido:</strong>
+            {{ datos.dineroRecibido() | currency:'USD' }}
+          </ion-label>
+        </ion-item>
+
+        @if (datos.cambio() >= 0) {
+          <ion-item lines="none">
+            <ion-label>
+              <strong>Cambio: </strong>
+              <ion-text color="success">
+                <strong>{{ datos.cambio() | currency:'USD' }}</strong>
+              </ion-text>
+            </ion-label>
+          </ion-item>
+        } @else {
+          <ion-item lines="none">
+            <ion-label>
+              <strong>Saldo Pendiente:</strong>
+              <ion-text color="danger">
+                <strong>{{ -datos.cambio() | currency:'USD' }}</strong>
+              </ion-text>
+            </ion-label>
+          </ion-item>
+        }
+      </ion-card-content>
+    </ion-card>
+
+  } @else {
+    <ion-card>
+      <ion-card-content>
+        <ion-text>
+          <p>
+            Aún no se ha registrado ningún pago.
+          </p>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  }
+</ion-content>
