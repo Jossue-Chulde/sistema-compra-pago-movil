@@ -20,7 +20,9 @@ Toda la lógica se ejecuta localmente, sin necesidad de conexión a internet.
 
 ---
 ## Enlace del video de la muestra del splash screen
-![VIDEO](https://epnecuador-my.sharepoint.com/:v:/r/personal/fredderick_chulde_epn_edu_ec/_layouts/15/stream.aspx?id=%2Fpersonal%2Ffredderick_chulde_epn_edu_ec%2FDocuments%2FAplicaciones%20Moviles%2FVideo%20-Deber%202%20-%20splash%20screen.mp4&share=cQo-zWH0Sje-R42iHSkDJzYHEgUC6lQSgWGgj6o0haSQJp6CQw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0)
+```
+https://epnecuador-my.sharepoint.com/:v:/r/personal/fredderick_chulde_epn_edu_ec/_layouts/15/stream.aspx?id=%2Fpersonal%2Ffredderick_chulde_epn_edu_ec%2FDocuments%2FAplicaciones%20Moviles%2FVideo%20-Deber%202%20-%20splash%20screen.mp4&share=cQo-zWH0Sje-R42iHSkDJzYHEgUC6lQSgWGgj6o0haSQJp6CQw&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0
+```
 ---
 ## Estructura del Poryecto
 ```
